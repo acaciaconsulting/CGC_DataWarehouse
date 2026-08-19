@@ -41,36 +41,36 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet.photon.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="data/CGC1mContourClip_2.js"></script>
-        <script src="data/CGCBunkersSoutar_3.js"></script>
-        <script src="data/CGCGreensSoutar_4.js"></script>
-        <script src="data/CGCBunkersWatson_5.js"></script>
-        <script src="data/CGCGreensWatson_6.js"></script>
-        <script src="data/CGCBunkers2024_7.js"></script>
-        <script src="data/CGCFairways_8.js"></script>
-        <script src="data/CGCGreens_9.js"></script>
-        <script src="data/CGCTees_10.js"></script>
-        <script src="data/CGCIrrigationTrunk_11.js"></script>
-        <script src="data/CGCIrrigationDistribution_12.js"></script>
-        <script src="data/CGCIrrigationSpike_13.js"></script>
-        <script src="data/CGCIrrigationValve_14.js"></script>
-        <script src="data/CGCIrrigationHead_15.js"></script>
-        <script src="data/CGCSubsoil_16.js"></script>
-        <script src="data/CGCDrainageInternal_17.js"></script>
-        <script src="data/CGCDrainageInternalSIorJCN_18.js"></script>
-        <script src="data/CGCStormwaterExternal_19.js"></script>
-        <script src="data/CGCElectricalMSB_20.js"></script>
-        <script src="data/CGCElectricalDistribution_21.js"></script>
-        <script src="data/CGCElectricalLighting_22.js"></script>
-        <script src="data/CGCExternalServices_23.js"></script>
-        <script src="data/CGCInternalNonGolfServices_24.js"></script>
-        <script src="data/CGCTrees_25.js"></script>
-        <script src="data/UnknownPoint_26.js"></script>
-        <script src="data/UnknownLine_27.js"></script>
+        <script src="data/CGC1mContourClip_3.js"></script>
+        <script src="data/CGCBunkersSoutar_4.js"></script>
+        <script src="data/CGCGreensSoutar_5.js"></script>
+        <script src="data/CGCBunkersWatson_6.js"></script>
+        <script src="data/CGCGreensWatson_7.js"></script>
+        <script src="data/CGCBunkers2024_8.js"></script>
+        <script src="data/CGCFairways_9.js"></script>
+        <script src="data/CGCGreens_10.js"></script>
+        <script src="data/CGCTees_11.js"></script>
+        <script src="data/CGCIrrigationTrunk_12.js"></script>
+        <script src="data/CGCIrrigationDistribution_13.js"></script>
+        <script src="data/CGCIrrigationSpike_14.js"></script>
+        <script src="data/CGCIrrigationValve_15.js"></script>
+        <script src="data/CGCIrrigationHead_16.js"></script>
+        <script src="data/CGCSubsoil_17.js"></script>
+        <script src="data/CGCDrainageInternal_18.js"></script>
+        <script src="data/CGCDrainageInternalSIorJCN_19.js"></script>
+        <script src="data/CGCStormwaterExternal_20.js"></script>
+        <script src="data/CGCElectricalMSB_21.js"></script>
+        <script src="data/CGCElectricalDistribution_22.js"></script>
+        <script src="data/CGCElectricalLighting_23.js"></script>
+        <script src="data/CGCExternalServices_24.js"></script>
+        <script src="data/CGCInternalNonGolfServices_25.js"></script>
+        <script src="data/CGCTrees_26.js"></script>
+        <script src="data/UnknownPoint_27.js"></script>
+        <script src="data/UnknownLine_28.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[-33.85472435910653,151.08880611995284],[-33.84450389948319,151.10610328397163]]);
+        }).fitBounds([[-33.850679195566684,151.09932585002275],[-33.84890920038189,151.10313889651795]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/qgis2web/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -163,16 +163,25 @@
         });
         layer_GoogleSatellite_0;
         map.addLayer(layer_GoogleSatellite_0);
-        map.createPane('pane_CGCIN20260224001FullCoursePNGGeorefMR150Export_1');
-        map.getPane('pane_CGCIN20260224001FullCoursePNGGeorefMR150Export_1').style.zIndex = 401;
-        var img_CGCIN20260224001FullCoursePNGGeorefMR150Export_1 = 'data/CGCIN20260224001FullCoursePNGGeorefMR150Export_1.png';
-        var img_bounds_CGCIN20260224001FullCoursePNGGeorefMR150Export_1 = [[-33.85473494099422,151.08851312048242],[-33.84499051202501,151.10362078407954]];
-        var layer_CGCIN20260224001FullCoursePNGGeorefMR150Export_1 = new L.imageOverlay(img_CGCIN20260224001FullCoursePNGGeorefMR150Export_1,
-                                              img_bounds_CGCIN20260224001FullCoursePNGGeorefMR150Export_1,
-                                              {pane: 'pane_CGCIN20260224001FullCoursePNGGeorefMR150Export_1'});
-        bounds_group.addLayer(layer_CGCIN20260224001FullCoursePNGGeorefMR150Export_1);
-        map.addLayer(layer_CGCIN20260224001FullCoursePNGGeorefMR150Export_1);
-        function pop_CGC1mContourClip_2(feature, layer) {
+        map.createPane('pane_CGCIN20260224001FullCoursePNGGeorefHRExport_1');
+        map.getPane('pane_CGCIN20260224001FullCoursePNGGeorefHRExport_1').style.zIndex = 401;
+        var img_CGCIN20260224001FullCoursePNGGeorefHRExport_1 = 'data/CGCIN20260224001FullCoursePNGGeorefHRExport_1.png';
+        var img_bounds_CGCIN20260224001FullCoursePNGGeorefHRExport_1 = [[-33.85463124043374,151.0891397528979],[-33.84516606183229,151.10478180364788]];
+        var layer_CGCIN20260224001FullCoursePNGGeorefHRExport_1 = new L.imageOverlay(img_CGCIN20260224001FullCoursePNGGeorefHRExport_1,
+                                              img_bounds_CGCIN20260224001FullCoursePNGGeorefHRExport_1,
+                                              {pane: 'pane_CGCIN20260224001FullCoursePNGGeorefHRExport_1'});
+        bounds_group.addLayer(layer_CGCIN20260224001FullCoursePNGGeorefHRExport_1);
+        map.addLayer(layer_CGCIN20260224001FullCoursePNGGeorefHRExport_1);
+        map.createPane('pane_202608CGCRangeUpdate_2');
+        map.getPane('pane_202608CGCRangeUpdate_2').style.zIndex = 402;
+        var img_202608CGCRangeUpdate_2 = 'data/202608CGCRangeUpdate_2.png';
+        var img_bounds_202608CGCRangeUpdate_2 = [[6252628.5551,324230.19427529373],[6252984.063,324440.8496247062]];
+        var layer_202608CGCRangeUpdate_2 = new L.imageOverlay(img_202608CGCRangeUpdate_2,
+                                              img_bounds_202608CGCRangeUpdate_2,
+                                              {pane: 'pane_202608CGCRangeUpdate_2'});
+        bounds_group.addLayer(layer_202608CGCRangeUpdate_2);
+        map.addLayer(layer_202608CGCRangeUpdate_2);
+        function pop_CGC1mContourClip_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Value'] !== null ? autolinker.link(String(feature.properties['Value']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -185,9 +194,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGC1mContourClip_2_0() {
+        function style_CGC1mContourClip_3_0() {
             return {
-                pane: 'pane_CGC1mContourClip_2',
+                pane: 'pane_CGC1mContourClip_3',
                 opacity: 1,
                 color: 'rgba(7,249,246,1.0)',
                 dashArray: '',
@@ -198,21 +207,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGC1mContourClip_2');
-        map.getPane('pane_CGC1mContourClip_2').style.zIndex = 402;
-        map.getPane('pane_CGC1mContourClip_2').style['mix-blend-mode'] = 'normal';
-        var layer_CGC1mContourClip_2 = new L.geoJson(json_CGC1mContourClip_2, {
+        map.createPane('pane_CGC1mContourClip_3');
+        map.getPane('pane_CGC1mContourClip_3').style.zIndex = 403;
+        map.getPane('pane_CGC1mContourClip_3').style['mix-blend-mode'] = 'normal';
+        var layer_CGC1mContourClip_3 = new L.geoJson(json_CGC1mContourClip_3, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGC1mContourClip_2',
-            layerName: 'layer_CGC1mContourClip_2',
-            pane: 'pane_CGC1mContourClip_2',
-            onEachFeature: pop_CGC1mContourClip_2,
-            style: style_CGC1mContourClip_2_0,
+            dataVar: 'json_CGC1mContourClip_3',
+            layerName: 'layer_CGC1mContourClip_3',
+            pane: 'pane_CGC1mContourClip_3',
+            onEachFeature: pop_CGC1mContourClip_3,
+            style: style_CGC1mContourClip_3_0,
         });
-        bounds_group.addLayer(layer_CGC1mContourClip_2);
-        map.addLayer(layer_CGC1mContourClip_2);
-        function pop_CGCBunkersSoutar_3(feature, layer) {
+        bounds_group.addLayer(layer_CGC1mContourClip_3);
+        map.addLayer(layer_CGC1mContourClip_3);
+        function pop_CGCBunkersSoutar_4(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -237,9 +246,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCBunkersSoutar_3_0() {
+        function style_CGCBunkersSoutar_4_0() {
             return {
-                pane: 'pane_CGCBunkersSoutar_3',
+                pane: 'pane_CGCBunkersSoutar_4',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -252,21 +261,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCBunkersSoutar_3');
-        map.getPane('pane_CGCBunkersSoutar_3').style.zIndex = 403;
-        map.getPane('pane_CGCBunkersSoutar_3').style['mix-blend-mode'] = 'normal';
-        var layer_CGCBunkersSoutar_3 = new L.geoJson(json_CGCBunkersSoutar_3, {
+        map.createPane('pane_CGCBunkersSoutar_4');
+        map.getPane('pane_CGCBunkersSoutar_4').style.zIndex = 404;
+        map.getPane('pane_CGCBunkersSoutar_4').style['mix-blend-mode'] = 'normal';
+        var layer_CGCBunkersSoutar_4 = new L.geoJson(json_CGCBunkersSoutar_4, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCBunkersSoutar_3',
-            layerName: 'layer_CGCBunkersSoutar_3',
-            pane: 'pane_CGCBunkersSoutar_3',
-            onEachFeature: pop_CGCBunkersSoutar_3,
-            style: style_CGCBunkersSoutar_3_0,
+            dataVar: 'json_CGCBunkersSoutar_4',
+            layerName: 'layer_CGCBunkersSoutar_4',
+            pane: 'pane_CGCBunkersSoutar_4',
+            onEachFeature: pop_CGCBunkersSoutar_4,
+            style: style_CGCBunkersSoutar_4_0,
         });
-        bounds_group.addLayer(layer_CGCBunkersSoutar_3);
-        map.addLayer(layer_CGCBunkersSoutar_3);
-        function pop_CGCGreensSoutar_4(feature, layer) {
+        bounds_group.addLayer(layer_CGCBunkersSoutar_4);
+        map.addLayer(layer_CGCBunkersSoutar_4);
+        function pop_CGCGreensSoutar_5(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -282,9 +291,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCGreensSoutar_4_0() {
+        function style_CGCGreensSoutar_5_0() {
             return {
-                pane: 'pane_CGCGreensSoutar_4',
+                pane: 'pane_CGCGreensSoutar_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -297,21 +306,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCGreensSoutar_4');
-        map.getPane('pane_CGCGreensSoutar_4').style.zIndex = 404;
-        map.getPane('pane_CGCGreensSoutar_4').style['mix-blend-mode'] = 'normal';
-        var layer_CGCGreensSoutar_4 = new L.geoJson(json_CGCGreensSoutar_4, {
+        map.createPane('pane_CGCGreensSoutar_5');
+        map.getPane('pane_CGCGreensSoutar_5').style.zIndex = 405;
+        map.getPane('pane_CGCGreensSoutar_5').style['mix-blend-mode'] = 'normal';
+        var layer_CGCGreensSoutar_5 = new L.geoJson(json_CGCGreensSoutar_5, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCGreensSoutar_4',
-            layerName: 'layer_CGCGreensSoutar_4',
-            pane: 'pane_CGCGreensSoutar_4',
-            onEachFeature: pop_CGCGreensSoutar_4,
-            style: style_CGCGreensSoutar_4_0,
+            dataVar: 'json_CGCGreensSoutar_5',
+            layerName: 'layer_CGCGreensSoutar_5',
+            pane: 'pane_CGCGreensSoutar_5',
+            onEachFeature: pop_CGCGreensSoutar_5,
+            style: style_CGCGreensSoutar_5_0,
         });
-        bounds_group.addLayer(layer_CGCGreensSoutar_4);
-        map.addLayer(layer_CGCGreensSoutar_4);
-        function pop_CGCBunkersWatson_5(feature, layer) {
+        bounds_group.addLayer(layer_CGCGreensSoutar_5);
+        map.addLayer(layer_CGCGreensSoutar_5);
+        function pop_CGCBunkersWatson_6(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -333,9 +342,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCBunkersWatson_5_0() {
+        function style_CGCBunkersWatson_6_0() {
             return {
-                pane: 'pane_CGCBunkersWatson_5',
+                pane: 'pane_CGCBunkersWatson_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -348,21 +357,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCBunkersWatson_5');
-        map.getPane('pane_CGCBunkersWatson_5').style.zIndex = 405;
-        map.getPane('pane_CGCBunkersWatson_5').style['mix-blend-mode'] = 'normal';
-        var layer_CGCBunkersWatson_5 = new L.geoJson(json_CGCBunkersWatson_5, {
+        map.createPane('pane_CGCBunkersWatson_6');
+        map.getPane('pane_CGCBunkersWatson_6').style.zIndex = 406;
+        map.getPane('pane_CGCBunkersWatson_6').style['mix-blend-mode'] = 'normal';
+        var layer_CGCBunkersWatson_6 = new L.geoJson(json_CGCBunkersWatson_6, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCBunkersWatson_5',
-            layerName: 'layer_CGCBunkersWatson_5',
-            pane: 'pane_CGCBunkersWatson_5',
-            onEachFeature: pop_CGCBunkersWatson_5,
-            style: style_CGCBunkersWatson_5_0,
+            dataVar: 'json_CGCBunkersWatson_6',
+            layerName: 'layer_CGCBunkersWatson_6',
+            pane: 'pane_CGCBunkersWatson_6',
+            onEachFeature: pop_CGCBunkersWatson_6,
+            style: style_CGCBunkersWatson_6_0,
         });
-        bounds_group.addLayer(layer_CGCBunkersWatson_5);
-        map.addLayer(layer_CGCBunkersWatson_5);
-        function pop_CGCGreensWatson_6(feature, layer) {
+        bounds_group.addLayer(layer_CGCBunkersWatson_6);
+        map.addLayer(layer_CGCBunkersWatson_6);
+        function pop_CGCGreensWatson_7(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -381,9 +390,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCGreensWatson_6_0() {
+        function style_CGCGreensWatson_7_0() {
             return {
-                pane: 'pane_CGCGreensWatson_6',
+                pane: 'pane_CGCGreensWatson_7',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -396,21 +405,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCGreensWatson_6');
-        map.getPane('pane_CGCGreensWatson_6').style.zIndex = 406;
-        map.getPane('pane_CGCGreensWatson_6').style['mix-blend-mode'] = 'normal';
-        var layer_CGCGreensWatson_6 = new L.geoJson(json_CGCGreensWatson_6, {
+        map.createPane('pane_CGCGreensWatson_7');
+        map.getPane('pane_CGCGreensWatson_7').style.zIndex = 407;
+        map.getPane('pane_CGCGreensWatson_7').style['mix-blend-mode'] = 'normal';
+        var layer_CGCGreensWatson_7 = new L.geoJson(json_CGCGreensWatson_7, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCGreensWatson_6',
-            layerName: 'layer_CGCGreensWatson_6',
-            pane: 'pane_CGCGreensWatson_6',
-            onEachFeature: pop_CGCGreensWatson_6,
-            style: style_CGCGreensWatson_6_0,
+            dataVar: 'json_CGCGreensWatson_7',
+            layerName: 'layer_CGCGreensWatson_7',
+            pane: 'pane_CGCGreensWatson_7',
+            onEachFeature: pop_CGCGreensWatson_7,
+            style: style_CGCGreensWatson_7_0,
         });
-        bounds_group.addLayer(layer_CGCGreensWatson_6);
-        map.addLayer(layer_CGCGreensWatson_6);
-        function pop_CGCBunkers2024_7(feature, layer) {
+        bounds_group.addLayer(layer_CGCGreensWatson_7);
+        map.addLayer(layer_CGCGreensWatson_7);
+        function pop_CGCBunkers2024_8(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -435,9 +444,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCBunkers2024_7_0() {
+        function style_CGCBunkers2024_8_0() {
             return {
-                pane: 'pane_CGCBunkers2024_7',
+                pane: 'pane_CGCBunkers2024_8',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -450,21 +459,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCBunkers2024_7');
-        map.getPane('pane_CGCBunkers2024_7').style.zIndex = 407;
-        map.getPane('pane_CGCBunkers2024_7').style['mix-blend-mode'] = 'normal';
-        var layer_CGCBunkers2024_7 = new L.geoJson(json_CGCBunkers2024_7, {
+        map.createPane('pane_CGCBunkers2024_8');
+        map.getPane('pane_CGCBunkers2024_8').style.zIndex = 408;
+        map.getPane('pane_CGCBunkers2024_8').style['mix-blend-mode'] = 'normal';
+        var layer_CGCBunkers2024_8 = new L.geoJson(json_CGCBunkers2024_8, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCBunkers2024_7',
-            layerName: 'layer_CGCBunkers2024_7',
-            pane: 'pane_CGCBunkers2024_7',
-            onEachFeature: pop_CGCBunkers2024_7,
-            style: style_CGCBunkers2024_7_0,
+            dataVar: 'json_CGCBunkers2024_8',
+            layerName: 'layer_CGCBunkers2024_8',
+            pane: 'pane_CGCBunkers2024_8',
+            onEachFeature: pop_CGCBunkers2024_8,
+            style: style_CGCBunkers2024_8_0,
         });
-        bounds_group.addLayer(layer_CGCBunkers2024_7);
-        map.addLayer(layer_CGCBunkers2024_7);
-        function pop_CGCFairways_8(feature, layer) {
+        bounds_group.addLayer(layer_CGCBunkers2024_8);
+        map.addLayer(layer_CGCBunkers2024_8);
+        function pop_CGCFairways_9(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -480,7 +489,7 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        var pattern_CGCFairways_8_0 = new L.StripePattern({
+        var pattern_CGCFairways_9_0 = new L.StripePattern({
             weight: 0.3,
             spaceWeight: 2.0,
             color: '#000000',
@@ -488,19 +497,19 @@
             spaceOpacity: 0,
             angle: 225
         });
-        pattern_CGCFairways_8_0.addTo(map);
-        function style_CGCFairways_8_0() {
+        pattern_CGCFairways_9_0.addTo(map);
+        function style_CGCFairways_9_0() {
             return {
-                pane: 'pane_CGCFairways_8',
+                pane: 'pane_CGCFairways_9',
                 stroke: false,
                 fillOpacity: 1,
-                fillPattern: pattern_CGCFairways_8_0,
+                fillPattern: pattern_CGCFairways_9_0,
                 interactive: true,
             }
         }
-        function style_CGCFairways_8_1() {
+        function style_CGCFairways_9_1() {
             return {
-                pane: 'pane_CGCFairways_8',
+                pane: 'pane_CGCFairways_9',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
@@ -511,21 +520,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCFairways_8');
-        map.getPane('pane_CGCFairways_8').style.zIndex = 408;
-        map.getPane('pane_CGCFairways_8').style['mix-blend-mode'] = 'normal';
-        var layer_CGCFairways_8 = new L.geoJson.multiStyle(json_CGCFairways_8, {
+        map.createPane('pane_CGCFairways_9');
+        map.getPane('pane_CGCFairways_9').style.zIndex = 409;
+        map.getPane('pane_CGCFairways_9').style['mix-blend-mode'] = 'normal';
+        var layer_CGCFairways_9 = new L.geoJson.multiStyle(json_CGCFairways_9, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCFairways_8',
-            layerName: 'layer_CGCFairways_8',
-            pane: 'pane_CGCFairways_8',
-            onEachFeature: pop_CGCFairways_8,
-            styles: [style_CGCFairways_8_0,style_CGCFairways_8_1,]
+            dataVar: 'json_CGCFairways_9',
+            layerName: 'layer_CGCFairways_9',
+            pane: 'pane_CGCFairways_9',
+            onEachFeature: pop_CGCFairways_9,
+            styles: [style_CGCFairways_9_0,style_CGCFairways_9_1,]
         });
-        bounds_group.addLayer(layer_CGCFairways_8);
-        map.addLayer(layer_CGCFairways_8);
-        function pop_CGCGreens_9(feature, layer) {
+        bounds_group.addLayer(layer_CGCFairways_9);
+        map.addLayer(layer_CGCFairways_9);
+        function pop_CGCGreens_10(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -541,9 +550,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCGreens_9_0() {
+        function style_CGCGreens_10_0() {
             return {
-                pane: 'pane_CGCGreens_9',
+                pane: 'pane_CGCGreens_10',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -556,21 +565,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCGreens_9');
-        map.getPane('pane_CGCGreens_9').style.zIndex = 409;
-        map.getPane('pane_CGCGreens_9').style['mix-blend-mode'] = 'normal';
-        var layer_CGCGreens_9 = new L.geoJson(json_CGCGreens_9, {
+        map.createPane('pane_CGCGreens_10');
+        map.getPane('pane_CGCGreens_10').style.zIndex = 410;
+        map.getPane('pane_CGCGreens_10').style['mix-blend-mode'] = 'normal';
+        var layer_CGCGreens_10 = new L.geoJson(json_CGCGreens_10, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCGreens_9',
-            layerName: 'layer_CGCGreens_9',
-            pane: 'pane_CGCGreens_9',
-            onEachFeature: pop_CGCGreens_9,
-            style: style_CGCGreens_9_0,
+            dataVar: 'json_CGCGreens_10',
+            layerName: 'layer_CGCGreens_10',
+            pane: 'pane_CGCGreens_10',
+            onEachFeature: pop_CGCGreens_10,
+            style: style_CGCGreens_10_0,
         });
-        bounds_group.addLayer(layer_CGCGreens_9);
-        map.addLayer(layer_CGCGreens_9);
-        function pop_CGCTees_10(feature, layer) {
+        bounds_group.addLayer(layer_CGCGreens_10);
+        map.addLayer(layer_CGCGreens_10);
+        function pop_CGCTees_11(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -586,9 +595,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCTees_10_0() {
+        function style_CGCTees_11_0() {
             return {
-                pane: 'pane_CGCTees_10',
+                pane: 'pane_CGCTees_11',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -601,21 +610,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCTees_10');
-        map.getPane('pane_CGCTees_10').style.zIndex = 410;
-        map.getPane('pane_CGCTees_10').style['mix-blend-mode'] = 'normal';
-        var layer_CGCTees_10 = new L.geoJson(json_CGCTees_10, {
+        map.createPane('pane_CGCTees_11');
+        map.getPane('pane_CGCTees_11').style.zIndex = 411;
+        map.getPane('pane_CGCTees_11').style['mix-blend-mode'] = 'normal';
+        var layer_CGCTees_11 = new L.geoJson(json_CGCTees_11, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCTees_10',
-            layerName: 'layer_CGCTees_10',
-            pane: 'pane_CGCTees_10',
-            onEachFeature: pop_CGCTees_10,
-            style: style_CGCTees_10_0,
+            dataVar: 'json_CGCTees_11',
+            layerName: 'layer_CGCTees_11',
+            pane: 'pane_CGCTees_11',
+            onEachFeature: pop_CGCTees_11,
+            style: style_CGCTees_11_0,
         });
-        bounds_group.addLayer(layer_CGCTees_10);
-        map.addLayer(layer_CGCTees_10);
-        function pop_CGCIrrigationTrunk_11(feature, layer) {
+        bounds_group.addLayer(layer_CGCTees_11);
+        map.addLayer(layer_CGCTees_11);
+        function pop_CGCIrrigationTrunk_12(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -643,9 +652,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCIrrigationTrunk_11_0() {
+        function style_CGCIrrigationTrunk_12_0() {
             return {
-                pane: 'pane_CGCIrrigationTrunk_11',
+                pane: 'pane_CGCIrrigationTrunk_12',
                 opacity: 1,
                 color: 'rgba(14,232,245,1.0)',
                 dashArray: '',
@@ -656,21 +665,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCIrrigationTrunk_11');
-        map.getPane('pane_CGCIrrigationTrunk_11').style.zIndex = 411;
-        map.getPane('pane_CGCIrrigationTrunk_11').style['mix-blend-mode'] = 'normal';
-        var layer_CGCIrrigationTrunk_11 = new L.geoJson(json_CGCIrrigationTrunk_11, {
+        map.createPane('pane_CGCIrrigationTrunk_12');
+        map.getPane('pane_CGCIrrigationTrunk_12').style.zIndex = 412;
+        map.getPane('pane_CGCIrrigationTrunk_12').style['mix-blend-mode'] = 'normal';
+        var layer_CGCIrrigationTrunk_12 = new L.geoJson(json_CGCIrrigationTrunk_12, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCIrrigationTrunk_11',
-            layerName: 'layer_CGCIrrigationTrunk_11',
-            pane: 'pane_CGCIrrigationTrunk_11',
-            onEachFeature: pop_CGCIrrigationTrunk_11,
-            style: style_CGCIrrigationTrunk_11_0,
+            dataVar: 'json_CGCIrrigationTrunk_12',
+            layerName: 'layer_CGCIrrigationTrunk_12',
+            pane: 'pane_CGCIrrigationTrunk_12',
+            onEachFeature: pop_CGCIrrigationTrunk_12,
+            style: style_CGCIrrigationTrunk_12_0,
         });
-        bounds_group.addLayer(layer_CGCIrrigationTrunk_11);
-        map.addLayer(layer_CGCIrrigationTrunk_11);
-        function pop_CGCIrrigationDistribution_12(feature, layer) {
+        bounds_group.addLayer(layer_CGCIrrigationTrunk_12);
+        map.addLayer(layer_CGCIrrigationTrunk_12);
+        function pop_CGCIrrigationDistribution_13(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -698,9 +707,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCIrrigationDistribution_12_0() {
+        function style_CGCIrrigationDistribution_13_0() {
             return {
-                pane: 'pane_CGCIrrigationDistribution_12',
+                pane: 'pane_CGCIrrigationDistribution_13',
                 opacity: 1,
                 color: 'rgba(14,232,245,1.0)',
                 dashArray: '8.0,4.0,2.0,4.0,2.0,4.0',
@@ -711,21 +720,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCIrrigationDistribution_12');
-        map.getPane('pane_CGCIrrigationDistribution_12').style.zIndex = 412;
-        map.getPane('pane_CGCIrrigationDistribution_12').style['mix-blend-mode'] = 'normal';
-        var layer_CGCIrrigationDistribution_12 = new L.geoJson(json_CGCIrrigationDistribution_12, {
+        map.createPane('pane_CGCIrrigationDistribution_13');
+        map.getPane('pane_CGCIrrigationDistribution_13').style.zIndex = 413;
+        map.getPane('pane_CGCIrrigationDistribution_13').style['mix-blend-mode'] = 'normal';
+        var layer_CGCIrrigationDistribution_13 = new L.geoJson(json_CGCIrrigationDistribution_13, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCIrrigationDistribution_12',
-            layerName: 'layer_CGCIrrigationDistribution_12',
-            pane: 'pane_CGCIrrigationDistribution_12',
-            onEachFeature: pop_CGCIrrigationDistribution_12,
-            style: style_CGCIrrigationDistribution_12_0,
+            dataVar: 'json_CGCIrrigationDistribution_13',
+            layerName: 'layer_CGCIrrigationDistribution_13',
+            pane: 'pane_CGCIrrigationDistribution_13',
+            onEachFeature: pop_CGCIrrigationDistribution_13,
+            style: style_CGCIrrigationDistribution_13_0,
         });
-        bounds_group.addLayer(layer_CGCIrrigationDistribution_12);
-        map.addLayer(layer_CGCIrrigationDistribution_12);
-        function pop_CGCIrrigationSpike_13(feature, layer) {
+        bounds_group.addLayer(layer_CGCIrrigationDistribution_13);
+        map.addLayer(layer_CGCIrrigationDistribution_13);
+        function pop_CGCIrrigationSpike_14(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -753,9 +762,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCIrrigationSpike_13_0() {
+        function style_CGCIrrigationSpike_14_0() {
             return {
-                pane: 'pane_CGCIrrigationSpike_13',
+                pane: 'pane_CGCIrrigationSpike_14',
                 shape: 'triangle',
                 radius: 2.0,
                 opacity: 1,
@@ -770,27 +779,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCIrrigationSpike_13');
-        map.getPane('pane_CGCIrrigationSpike_13').style.zIndex = 413;
-        map.getPane('pane_CGCIrrigationSpike_13').style['mix-blend-mode'] = 'normal';
-        var layer_CGCIrrigationSpike_13 = new L.geoJson(json_CGCIrrigationSpike_13, {
+        map.createPane('pane_CGCIrrigationSpike_14');
+        map.getPane('pane_CGCIrrigationSpike_14').style.zIndex = 414;
+        map.getPane('pane_CGCIrrigationSpike_14').style['mix-blend-mode'] = 'normal';
+        var layer_CGCIrrigationSpike_14 = new L.geoJson(json_CGCIrrigationSpike_14, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCIrrigationSpike_13',
-            layerName: 'layer_CGCIrrigationSpike_13',
-            pane: 'pane_CGCIrrigationSpike_13',
-            onEachFeature: pop_CGCIrrigationSpike_13,
+            dataVar: 'json_CGCIrrigationSpike_14',
+            layerName: 'layer_CGCIrrigationSpike_14',
+            pane: 'pane_CGCIrrigationSpike_14',
+            onEachFeature: pop_CGCIrrigationSpike_14,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.shapeMarker(latlng, style_CGCIrrigationSpike_13_0(feature));
+                return L.shapeMarker(latlng, style_CGCIrrigationSpike_14_0(feature));
             },
         });
-        bounds_group.addLayer(layer_CGCIrrigationSpike_13);
-        map.addLayer(layer_CGCIrrigationSpike_13);
-        function pop_CGCIrrigationValve_14(feature, layer) {
+        bounds_group.addLayer(layer_CGCIrrigationSpike_14);
+        map.addLayer(layer_CGCIrrigationSpike_14);
+        function pop_CGCIrrigationValve_15(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -818,9 +827,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCIrrigationValve_14_0() {
+        function style_CGCIrrigationValve_15_0() {
             return {
-                pane: 'pane_CGCIrrigationValve_14',
+                pane: 'pane_CGCIrrigationValve_15',
                 radius: 7.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -834,27 +843,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCIrrigationValve_14');
-        map.getPane('pane_CGCIrrigationValve_14').style.zIndex = 414;
-        map.getPane('pane_CGCIrrigationValve_14').style['mix-blend-mode'] = 'normal';
-        var layer_CGCIrrigationValve_14 = new L.geoJson(json_CGCIrrigationValve_14, {
+        map.createPane('pane_CGCIrrigationValve_15');
+        map.getPane('pane_CGCIrrigationValve_15').style.zIndex = 415;
+        map.getPane('pane_CGCIrrigationValve_15').style['mix-blend-mode'] = 'normal';
+        var layer_CGCIrrigationValve_15 = new L.geoJson(json_CGCIrrigationValve_15, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCIrrigationValve_14',
-            layerName: 'layer_CGCIrrigationValve_14',
-            pane: 'pane_CGCIrrigationValve_14',
-            onEachFeature: pop_CGCIrrigationValve_14,
+            dataVar: 'json_CGCIrrigationValve_15',
+            layerName: 'layer_CGCIrrigationValve_15',
+            pane: 'pane_CGCIrrigationValve_15',
+            onEachFeature: pop_CGCIrrigationValve_15,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.shapeMarker(latlng, style_CGCIrrigationValve_14_0(feature));
+                return L.shapeMarker(latlng, style_CGCIrrigationValve_15_0(feature));
             },
         });
-        bounds_group.addLayer(layer_CGCIrrigationValve_14);
-        map.addLayer(layer_CGCIrrigationValve_14);
-        function pop_CGCIrrigationHead_15(feature, layer) {
+        bounds_group.addLayer(layer_CGCIrrigationValve_15);
+        map.addLayer(layer_CGCIrrigationValve_15);
+        function pop_CGCIrrigationHead_16(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -882,9 +891,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCIrrigationHead_15_0() {
+        function style_CGCIrrigationHead_16_0() {
             return {
-                pane: 'pane_CGCIrrigationHead_15',
+                pane: 'pane_CGCIrrigationHead_16',
                 radius: 3.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -898,27 +907,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCIrrigationHead_15');
-        map.getPane('pane_CGCIrrigationHead_15').style.zIndex = 415;
-        map.getPane('pane_CGCIrrigationHead_15').style['mix-blend-mode'] = 'normal';
-        var layer_CGCIrrigationHead_15 = new L.geoJson(json_CGCIrrigationHead_15, {
+        map.createPane('pane_CGCIrrigationHead_16');
+        map.getPane('pane_CGCIrrigationHead_16').style.zIndex = 416;
+        map.getPane('pane_CGCIrrigationHead_16').style['mix-blend-mode'] = 'normal';
+        var layer_CGCIrrigationHead_16 = new L.geoJson(json_CGCIrrigationHead_16, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCIrrigationHead_15',
-            layerName: 'layer_CGCIrrigationHead_15',
-            pane: 'pane_CGCIrrigationHead_15',
-            onEachFeature: pop_CGCIrrigationHead_15,
+            dataVar: 'json_CGCIrrigationHead_16',
+            layerName: 'layer_CGCIrrigationHead_16',
+            pane: 'pane_CGCIrrigationHead_16',
+            onEachFeature: pop_CGCIrrigationHead_16,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_CGCIrrigationHead_15_0(feature));
+                return L.circleMarker(latlng, style_CGCIrrigationHead_16_0(feature));
             },
         });
-        bounds_group.addLayer(layer_CGCIrrigationHead_15);
-        map.addLayer(layer_CGCIrrigationHead_15);
-        function pop_CGCSubsoil_16(feature, layer) {
+        bounds_group.addLayer(layer_CGCIrrigationHead_16);
+        map.addLayer(layer_CGCIrrigationHead_16);
+        function pop_CGCSubsoil_17(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -946,9 +955,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCSubsoil_16_0() {
+        function style_CGCSubsoil_17_0() {
             return {
-                pane: 'pane_CGCSubsoil_16',
+                pane: 'pane_CGCSubsoil_17',
                 opacity: 1,
                 color: 'rgba(252,246,12,1.0)',
                 dashArray: '2.0,4.0',
@@ -959,21 +968,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCSubsoil_16');
-        map.getPane('pane_CGCSubsoil_16').style.zIndex = 416;
-        map.getPane('pane_CGCSubsoil_16').style['mix-blend-mode'] = 'normal';
-        var layer_CGCSubsoil_16 = new L.geoJson(json_CGCSubsoil_16, {
+        map.createPane('pane_CGCSubsoil_17');
+        map.getPane('pane_CGCSubsoil_17').style.zIndex = 417;
+        map.getPane('pane_CGCSubsoil_17').style['mix-blend-mode'] = 'normal';
+        var layer_CGCSubsoil_17 = new L.geoJson(json_CGCSubsoil_17, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCSubsoil_16',
-            layerName: 'layer_CGCSubsoil_16',
-            pane: 'pane_CGCSubsoil_16',
-            onEachFeature: pop_CGCSubsoil_16,
-            style: style_CGCSubsoil_16_0,
+            dataVar: 'json_CGCSubsoil_17',
+            layerName: 'layer_CGCSubsoil_17',
+            pane: 'pane_CGCSubsoil_17',
+            onEachFeature: pop_CGCSubsoil_17,
+            style: style_CGCSubsoil_17_0,
         });
-        bounds_group.addLayer(layer_CGCSubsoil_16);
-        map.addLayer(layer_CGCSubsoil_16);
-        function pop_CGCDrainageInternal_17(feature, layer) {
+        bounds_group.addLayer(layer_CGCSubsoil_17);
+        map.addLayer(layer_CGCSubsoil_17);
+        function pop_CGCDrainageInternal_18(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1001,9 +1010,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCDrainageInternal_17_0() {
+        function style_CGCDrainageInternal_18_0() {
             return {
-                pane: 'pane_CGCDrainageInternal_17',
+                pane: 'pane_CGCDrainageInternal_18',
                 opacity: 1,
                 color: 'rgba(252,246,12,1.0)',
                 dashArray: '8.0,4.0,2.0,4.0,2.0,4.0',
@@ -1014,21 +1023,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCDrainageInternal_17');
-        map.getPane('pane_CGCDrainageInternal_17').style.zIndex = 417;
-        map.getPane('pane_CGCDrainageInternal_17').style['mix-blend-mode'] = 'normal';
-        var layer_CGCDrainageInternal_17 = new L.geoJson(json_CGCDrainageInternal_17, {
+        map.createPane('pane_CGCDrainageInternal_18');
+        map.getPane('pane_CGCDrainageInternal_18').style.zIndex = 418;
+        map.getPane('pane_CGCDrainageInternal_18').style['mix-blend-mode'] = 'normal';
+        var layer_CGCDrainageInternal_18 = new L.geoJson(json_CGCDrainageInternal_18, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCDrainageInternal_17',
-            layerName: 'layer_CGCDrainageInternal_17',
-            pane: 'pane_CGCDrainageInternal_17',
-            onEachFeature: pop_CGCDrainageInternal_17,
-            style: style_CGCDrainageInternal_17_0,
+            dataVar: 'json_CGCDrainageInternal_18',
+            layerName: 'layer_CGCDrainageInternal_18',
+            pane: 'pane_CGCDrainageInternal_18',
+            onEachFeature: pop_CGCDrainageInternal_18,
+            style: style_CGCDrainageInternal_18_0,
         });
-        bounds_group.addLayer(layer_CGCDrainageInternal_17);
-        map.addLayer(layer_CGCDrainageInternal_17);
-        function pop_CGCDrainageInternalSIorJCN_18(feature, layer) {
+        bounds_group.addLayer(layer_CGCDrainageInternal_18);
+        map.addLayer(layer_CGCDrainageInternal_18);
+        function pop_CGCDrainageInternalSIorJCN_19(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1053,9 +1062,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCDrainageInternalSIorJCN_18_0() {
+        function style_CGCDrainageInternalSIorJCN_19_0() {
             return {
-                pane: 'pane_CGCDrainageInternalSIorJCN_18',
+                pane: 'pane_CGCDrainageInternalSIorJCN_19',
                 radius: 3.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -1069,27 +1078,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCDrainageInternalSIorJCN_18');
-        map.getPane('pane_CGCDrainageInternalSIorJCN_18').style.zIndex = 418;
-        map.getPane('pane_CGCDrainageInternalSIorJCN_18').style['mix-blend-mode'] = 'normal';
-        var layer_CGCDrainageInternalSIorJCN_18 = new L.geoJson(json_CGCDrainageInternalSIorJCN_18, {
+        map.createPane('pane_CGCDrainageInternalSIorJCN_19');
+        map.getPane('pane_CGCDrainageInternalSIorJCN_19').style.zIndex = 419;
+        map.getPane('pane_CGCDrainageInternalSIorJCN_19').style['mix-blend-mode'] = 'normal';
+        var layer_CGCDrainageInternalSIorJCN_19 = new L.geoJson(json_CGCDrainageInternalSIorJCN_19, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCDrainageInternalSIorJCN_18',
-            layerName: 'layer_CGCDrainageInternalSIorJCN_18',
-            pane: 'pane_CGCDrainageInternalSIorJCN_18',
-            onEachFeature: pop_CGCDrainageInternalSIorJCN_18,
+            dataVar: 'json_CGCDrainageInternalSIorJCN_19',
+            layerName: 'layer_CGCDrainageInternalSIorJCN_19',
+            pane: 'pane_CGCDrainageInternalSIorJCN_19',
+            onEachFeature: pop_CGCDrainageInternalSIorJCN_19,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_CGCDrainageInternalSIorJCN_18_0(feature));
+                return L.circleMarker(latlng, style_CGCDrainageInternalSIorJCN_19_0(feature));
             },
         });
-        bounds_group.addLayer(layer_CGCDrainageInternalSIorJCN_18);
-        map.addLayer(layer_CGCDrainageInternalSIorJCN_18);
-        function pop_CGCStormwaterExternal_19(feature, layer) {
+        bounds_group.addLayer(layer_CGCDrainageInternalSIorJCN_19);
+        map.addLayer(layer_CGCDrainageInternalSIorJCN_19);
+        function pop_CGCStormwaterExternal_20(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1117,9 +1126,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCStormwaterExternal_19_0() {
+        function style_CGCStormwaterExternal_20_0() {
             return {
-                pane: 'pane_CGCStormwaterExternal_19',
+                pane: 'pane_CGCStormwaterExternal_20',
                 opacity: 1,
                 color: 'rgba(241,10,23,1.0)',
                 dashArray: '',
@@ -1130,21 +1139,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCStormwaterExternal_19');
-        map.getPane('pane_CGCStormwaterExternal_19').style.zIndex = 419;
-        map.getPane('pane_CGCStormwaterExternal_19').style['mix-blend-mode'] = 'normal';
-        var layer_CGCStormwaterExternal_19 = new L.geoJson(json_CGCStormwaterExternal_19, {
+        map.createPane('pane_CGCStormwaterExternal_20');
+        map.getPane('pane_CGCStormwaterExternal_20').style.zIndex = 420;
+        map.getPane('pane_CGCStormwaterExternal_20').style['mix-blend-mode'] = 'normal';
+        var layer_CGCStormwaterExternal_20 = new L.geoJson(json_CGCStormwaterExternal_20, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCStormwaterExternal_19',
-            layerName: 'layer_CGCStormwaterExternal_19',
-            pane: 'pane_CGCStormwaterExternal_19',
-            onEachFeature: pop_CGCStormwaterExternal_19,
-            style: style_CGCStormwaterExternal_19_0,
+            dataVar: 'json_CGCStormwaterExternal_20',
+            layerName: 'layer_CGCStormwaterExternal_20',
+            pane: 'pane_CGCStormwaterExternal_20',
+            onEachFeature: pop_CGCStormwaterExternal_20,
+            style: style_CGCStormwaterExternal_20_0,
         });
-        bounds_group.addLayer(layer_CGCStormwaterExternal_19);
-        map.addLayer(layer_CGCStormwaterExternal_19);
-        function pop_CGCElectricalMSB_20(feature, layer) {
+        bounds_group.addLayer(layer_CGCStormwaterExternal_20);
+        map.addLayer(layer_CGCStormwaterExternal_20);
+        function pop_CGCElectricalMSB_21(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1166,9 +1175,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCElectricalMSB_20_0() {
+        function style_CGCElectricalMSB_21_0() {
             return {
-                pane: 'pane_CGCElectricalMSB_20',
+                pane: 'pane_CGCElectricalMSB_21',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -1182,27 +1191,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCElectricalMSB_20');
-        map.getPane('pane_CGCElectricalMSB_20').style.zIndex = 420;
-        map.getPane('pane_CGCElectricalMSB_20').style['mix-blend-mode'] = 'normal';
-        var layer_CGCElectricalMSB_20 = new L.geoJson(json_CGCElectricalMSB_20, {
+        map.createPane('pane_CGCElectricalMSB_21');
+        map.getPane('pane_CGCElectricalMSB_21').style.zIndex = 421;
+        map.getPane('pane_CGCElectricalMSB_21').style['mix-blend-mode'] = 'normal';
+        var layer_CGCElectricalMSB_21 = new L.geoJson(json_CGCElectricalMSB_21, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCElectricalMSB_20',
-            layerName: 'layer_CGCElectricalMSB_20',
-            pane: 'pane_CGCElectricalMSB_20',
-            onEachFeature: pop_CGCElectricalMSB_20,
+            dataVar: 'json_CGCElectricalMSB_21',
+            layerName: 'layer_CGCElectricalMSB_21',
+            pane: 'pane_CGCElectricalMSB_21',
+            onEachFeature: pop_CGCElectricalMSB_21,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_CGCElectricalMSB_20_0(feature));
+                return L.circleMarker(latlng, style_CGCElectricalMSB_21_0(feature));
             },
         });
-        bounds_group.addLayer(layer_CGCElectricalMSB_20);
-        map.addLayer(layer_CGCElectricalMSB_20);
-        function pop_CGCElectricalDistribution_21(feature, layer) {
+        bounds_group.addLayer(layer_CGCElectricalMSB_21);
+        map.addLayer(layer_CGCElectricalMSB_21);
+        function pop_CGCElectricalDistribution_22(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1230,9 +1239,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCElectricalDistribution_21_0() {
+        function style_CGCElectricalDistribution_22_0() {
             return {
-                pane: 'pane_CGCElectricalDistribution_21',
+                pane: 'pane_CGCElectricalDistribution_22',
                 opacity: 1,
                 color: 'rgba(45,248,12,1.0)',
                 dashArray: '',
@@ -1243,21 +1252,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCElectricalDistribution_21');
-        map.getPane('pane_CGCElectricalDistribution_21').style.zIndex = 421;
-        map.getPane('pane_CGCElectricalDistribution_21').style['mix-blend-mode'] = 'normal';
-        var layer_CGCElectricalDistribution_21 = new L.geoJson(json_CGCElectricalDistribution_21, {
+        map.createPane('pane_CGCElectricalDistribution_22');
+        map.getPane('pane_CGCElectricalDistribution_22').style.zIndex = 422;
+        map.getPane('pane_CGCElectricalDistribution_22').style['mix-blend-mode'] = 'normal';
+        var layer_CGCElectricalDistribution_22 = new L.geoJson(json_CGCElectricalDistribution_22, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCElectricalDistribution_21',
-            layerName: 'layer_CGCElectricalDistribution_21',
-            pane: 'pane_CGCElectricalDistribution_21',
-            onEachFeature: pop_CGCElectricalDistribution_21,
-            style: style_CGCElectricalDistribution_21_0,
+            dataVar: 'json_CGCElectricalDistribution_22',
+            layerName: 'layer_CGCElectricalDistribution_22',
+            pane: 'pane_CGCElectricalDistribution_22',
+            onEachFeature: pop_CGCElectricalDistribution_22,
+            style: style_CGCElectricalDistribution_22_0,
         });
-        bounds_group.addLayer(layer_CGCElectricalDistribution_21);
-        map.addLayer(layer_CGCElectricalDistribution_21);
-        function pop_CGCElectricalLighting_22(feature, layer) {
+        bounds_group.addLayer(layer_CGCElectricalDistribution_22);
+        map.addLayer(layer_CGCElectricalDistribution_22);
+        function pop_CGCElectricalLighting_23(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1279,9 +1288,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCElectricalLighting_22_0() {
+        function style_CGCElectricalLighting_23_0() {
             return {
-                pane: 'pane_CGCElectricalLighting_22',
+                pane: 'pane_CGCElectricalLighting_23',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -1295,27 +1304,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCElectricalLighting_22');
-        map.getPane('pane_CGCElectricalLighting_22').style.zIndex = 422;
-        map.getPane('pane_CGCElectricalLighting_22').style['mix-blend-mode'] = 'normal';
-        var layer_CGCElectricalLighting_22 = new L.geoJson(json_CGCElectricalLighting_22, {
+        map.createPane('pane_CGCElectricalLighting_23');
+        map.getPane('pane_CGCElectricalLighting_23').style.zIndex = 423;
+        map.getPane('pane_CGCElectricalLighting_23').style['mix-blend-mode'] = 'normal';
+        var layer_CGCElectricalLighting_23 = new L.geoJson(json_CGCElectricalLighting_23, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCElectricalLighting_22',
-            layerName: 'layer_CGCElectricalLighting_22',
-            pane: 'pane_CGCElectricalLighting_22',
-            onEachFeature: pop_CGCElectricalLighting_22,
+            dataVar: 'json_CGCElectricalLighting_23',
+            layerName: 'layer_CGCElectricalLighting_23',
+            pane: 'pane_CGCElectricalLighting_23',
+            onEachFeature: pop_CGCElectricalLighting_23,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_CGCElectricalLighting_22_0(feature));
+                return L.circleMarker(latlng, style_CGCElectricalLighting_23_0(feature));
             },
         });
-        bounds_group.addLayer(layer_CGCElectricalLighting_22);
-        map.addLayer(layer_CGCElectricalLighting_22);
-        function pop_CGCExternalServices_23(feature, layer) {
+        bounds_group.addLayer(layer_CGCElectricalLighting_23);
+        map.addLayer(layer_CGCElectricalLighting_23);
+        function pop_CGCExternalServices_24(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1343,9 +1352,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCExternalServices_23_0() {
+        function style_CGCExternalServices_24_0() {
             return {
-                pane: 'pane_CGCExternalServices_23',
+                pane: 'pane_CGCExternalServices_24',
                 opacity: 1,
                 color: 'rgba(29,251,5,1.0)',
                 dashArray: '',
@@ -1356,21 +1365,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCExternalServices_23');
-        map.getPane('pane_CGCExternalServices_23').style.zIndex = 423;
-        map.getPane('pane_CGCExternalServices_23').style['mix-blend-mode'] = 'normal';
-        var layer_CGCExternalServices_23 = new L.geoJson(json_CGCExternalServices_23, {
+        map.createPane('pane_CGCExternalServices_24');
+        map.getPane('pane_CGCExternalServices_24').style.zIndex = 424;
+        map.getPane('pane_CGCExternalServices_24').style['mix-blend-mode'] = 'normal';
+        var layer_CGCExternalServices_24 = new L.geoJson(json_CGCExternalServices_24, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCExternalServices_23',
-            layerName: 'layer_CGCExternalServices_23',
-            pane: 'pane_CGCExternalServices_23',
-            onEachFeature: pop_CGCExternalServices_23,
-            style: style_CGCExternalServices_23_0,
+            dataVar: 'json_CGCExternalServices_24',
+            layerName: 'layer_CGCExternalServices_24',
+            pane: 'pane_CGCExternalServices_24',
+            onEachFeature: pop_CGCExternalServices_24,
+            style: style_CGCExternalServices_24_0,
         });
-        bounds_group.addLayer(layer_CGCExternalServices_23);
-        map.addLayer(layer_CGCExternalServices_23);
-        function pop_CGCInternalNonGolfServices_24(feature, layer) {
+        bounds_group.addLayer(layer_CGCExternalServices_24);
+        map.addLayer(layer_CGCExternalServices_24);
+        function pop_CGCInternalNonGolfServices_25(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1398,9 +1407,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCInternalNonGolfServices_24_0() {
+        function style_CGCInternalNonGolfServices_25_0() {
             return {
-                pane: 'pane_CGCInternalNonGolfServices_24',
+                pane: 'pane_CGCInternalNonGolfServices_25',
                 opacity: 1,
                 color: 'rgba(213,180,60,1.0)',
                 dashArray: '',
@@ -1411,21 +1420,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCInternalNonGolfServices_24');
-        map.getPane('pane_CGCInternalNonGolfServices_24').style.zIndex = 424;
-        map.getPane('pane_CGCInternalNonGolfServices_24').style['mix-blend-mode'] = 'normal';
-        var layer_CGCInternalNonGolfServices_24 = new L.geoJson(json_CGCInternalNonGolfServices_24, {
+        map.createPane('pane_CGCInternalNonGolfServices_25');
+        map.getPane('pane_CGCInternalNonGolfServices_25').style.zIndex = 425;
+        map.getPane('pane_CGCInternalNonGolfServices_25').style['mix-blend-mode'] = 'normal';
+        var layer_CGCInternalNonGolfServices_25 = new L.geoJson(json_CGCInternalNonGolfServices_25, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCInternalNonGolfServices_24',
-            layerName: 'layer_CGCInternalNonGolfServices_24',
-            pane: 'pane_CGCInternalNonGolfServices_24',
-            onEachFeature: pop_CGCInternalNonGolfServices_24,
-            style: style_CGCInternalNonGolfServices_24_0,
+            dataVar: 'json_CGCInternalNonGolfServices_25',
+            layerName: 'layer_CGCInternalNonGolfServices_25',
+            pane: 'pane_CGCInternalNonGolfServices_25',
+            onEachFeature: pop_CGCInternalNonGolfServices_25,
+            style: style_CGCInternalNonGolfServices_25_0,
         });
-        bounds_group.addLayer(layer_CGCInternalNonGolfServices_24);
-        map.addLayer(layer_CGCInternalNonGolfServices_24);
-        function pop_CGCTrees_25(feature, layer) {
+        bounds_group.addLayer(layer_CGCInternalNonGolfServices_25);
+        map.addLayer(layer_CGCInternalNonGolfServices_25);
+        function pop_CGCTrees_26(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1477,9 +1486,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_CGCTrees_25_0() {
+        function style_CGCTrees_26_0() {
             return {
-                pane: 'pane_CGCTrees_25',
+                pane: 'pane_CGCTrees_26',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -1493,27 +1502,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_CGCTrees_25');
-        map.getPane('pane_CGCTrees_25').style.zIndex = 425;
-        map.getPane('pane_CGCTrees_25').style['mix-blend-mode'] = 'normal';
-        var layer_CGCTrees_25 = new L.geoJson(json_CGCTrees_25, {
+        map.createPane('pane_CGCTrees_26');
+        map.getPane('pane_CGCTrees_26').style.zIndex = 426;
+        map.getPane('pane_CGCTrees_26').style['mix-blend-mode'] = 'normal';
+        var layer_CGCTrees_26 = new L.geoJson(json_CGCTrees_26, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CGCTrees_25',
-            layerName: 'layer_CGCTrees_25',
-            pane: 'pane_CGCTrees_25',
-            onEachFeature: pop_CGCTrees_25,
+            dataVar: 'json_CGCTrees_26',
+            layerName: 'layer_CGCTrees_26',
+            pane: 'pane_CGCTrees_26',
+            onEachFeature: pop_CGCTrees_26,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_CGCTrees_25_0(feature));
+                return L.circleMarker(latlng, style_CGCTrees_26_0(feature));
             },
         });
-        bounds_group.addLayer(layer_CGCTrees_25);
-        map.addLayer(layer_CGCTrees_25);
-        function pop_UnknownPoint_26(feature, layer) {
+        bounds_group.addLayer(layer_CGCTrees_26);
+        map.addLayer(layer_CGCTrees_26);
+        function pop_UnknownPoint_27(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1526,9 +1535,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_UnknownPoint_26_0() {
+        function style_UnknownPoint_27_0() {
             return {
-                pane: 'pane_UnknownPoint_26',
+                pane: 'pane_UnknownPoint_27',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -1542,27 +1551,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_UnknownPoint_26');
-        map.getPane('pane_UnknownPoint_26').style.zIndex = 426;
-        map.getPane('pane_UnknownPoint_26').style['mix-blend-mode'] = 'normal';
-        var layer_UnknownPoint_26 = new L.geoJson(json_UnknownPoint_26, {
+        map.createPane('pane_UnknownPoint_27');
+        map.getPane('pane_UnknownPoint_27').style.zIndex = 427;
+        map.getPane('pane_UnknownPoint_27').style['mix-blend-mode'] = 'normal';
+        var layer_UnknownPoint_27 = new L.geoJson(json_UnknownPoint_27, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_UnknownPoint_26',
-            layerName: 'layer_UnknownPoint_26',
-            pane: 'pane_UnknownPoint_26',
-            onEachFeature: pop_UnknownPoint_26,
+            dataVar: 'json_UnknownPoint_27',
+            layerName: 'layer_UnknownPoint_27',
+            pane: 'pane_UnknownPoint_27',
+            onEachFeature: pop_UnknownPoint_27,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_UnknownPoint_26_0(feature));
+                return L.circleMarker(latlng, style_UnknownPoint_27_0(feature));
             },
         });
-        bounds_group.addLayer(layer_UnknownPoint_26);
-        map.addLayer(layer_UnknownPoint_26);
-        function pop_UnknownLine_27(feature, layer) {
+        bounds_group.addLayer(layer_UnknownPoint_27);
+        map.addLayer(layer_UnknownPoint_27);
+        function pop_UnknownLine_28(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1575,9 +1584,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_UnknownLine_27_0() {
+        function style_UnknownLine_28_0() {
             return {
-                pane: 'pane_UnknownLine_27',
+                pane: 'pane_UnknownLine_28',
                 opacity: 1,
                 color: 'rgba(133,182,111,1.0)',
                 dashArray: '',
@@ -1588,54 +1597,55 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_UnknownLine_27');
-        map.getPane('pane_UnknownLine_27').style.zIndex = 427;
-        map.getPane('pane_UnknownLine_27').style['mix-blend-mode'] = 'normal';
-        var layer_UnknownLine_27 = new L.geoJson(json_UnknownLine_27, {
+        map.createPane('pane_UnknownLine_28');
+        map.getPane('pane_UnknownLine_28').style.zIndex = 428;
+        map.getPane('pane_UnknownLine_28').style['mix-blend-mode'] = 'normal';
+        var layer_UnknownLine_28 = new L.geoJson(json_UnknownLine_28, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_UnknownLine_27',
-            layerName: 'layer_UnknownLine_27',
-            pane: 'pane_UnknownLine_27',
-            onEachFeature: pop_UnknownLine_27,
-            style: style_UnknownLine_27_0,
+            dataVar: 'json_UnknownLine_28',
+            layerName: 'layer_UnknownLine_28',
+            pane: 'pane_UnknownLine_28',
+            onEachFeature: pop_UnknownLine_28,
+            style: style_UnknownLine_28_0,
         });
-        bounds_group.addLayer(layer_UnknownLine_27);
-        map.addLayer(layer_UnknownLine_27);
+        bounds_group.addLayer(layer_UnknownLine_28);
+        map.addLayer(layer_UnknownLine_28);
         var overlaysTree = [
-            {label: '<img src="legend/UnknownLine_27.png" /> Unknown - Line', layer: layer_UnknownLine_27},
-            {label: '<img src="legend/UnknownPoint_26.png" /> Unknown - Point', layer: layer_UnknownPoint_26},
-            {label: '<img src="legend/CGCTrees_25.png" /> CGC Trees', layer: layer_CGCTrees_25},
-            {label: '<img src="legend/CGCInternalNonGolfServices_24.png" /> CGC Internal (Non-Golf) Services', layer: layer_CGCInternalNonGolfServices_24},
-            {label: '<img src="legend/CGCExternalServices_23.png" /> CGC External Services', layer: layer_CGCExternalServices_23},
+            {label: '<img src="legend/UnknownLine_28.png" /> Unknown - Line', layer: layer_UnknownLine_28},
+            {label: '<img src="legend/UnknownPoint_27.png" /> Unknown - Point', layer: layer_UnknownPoint_27},
+            {label: '<img src="legend/CGCTrees_26.png" /> CGC Trees', layer: layer_CGCTrees_26},
+            {label: '<img src="legend/CGCInternalNonGolfServices_25.png" /> CGC Internal (Non-Golf) Services', layer: layer_CGCInternalNonGolfServices_25},
+            {label: '<img src="legend/CGCExternalServices_24.png" /> CGC External Services', layer: layer_CGCExternalServices_24},
         {label: '<b>Electrical</b>',  selectAllCheckbox: true, children: [
-            {label: '<img src="legend/CGCElectricalLighting_22.png" /> CGC Electrical (Lighting)', layer: layer_CGCElectricalLighting_22},
-            {label: '<img src="legend/CGCElectricalDistribution_21.png" /> CGC Electrical (Distribution)', layer: layer_CGCElectricalDistribution_21},
-            {label: '<img src="legend/CGCElectricalMSB_20.png" /> CGC Electrical (MSB)', layer: layer_CGCElectricalMSB_20},]},
+            {label: '<img src="legend/CGCElectricalLighting_23.png" /> CGC Electrical (Lighting)', layer: layer_CGCElectricalLighting_23},
+            {label: '<img src="legend/CGCElectricalDistribution_22.png" /> CGC Electrical (Distribution)', layer: layer_CGCElectricalDistribution_22},
+            {label: '<img src="legend/CGCElectricalMSB_21.png" /> CGC Electrical (MSB)', layer: layer_CGCElectricalMSB_21},]},
         {label: '<b>Drainage</b>',  selectAllCheckbox: true, children: [
-            {label: '<img src="legend/CGCStormwaterExternal_19.png" /> CGC Stormwater (External)', layer: layer_CGCStormwaterExternal_19},
-            {label: '<img src="legend/CGCDrainageInternalSIorJCN_18.png" /> CGC Drainage (Internal SI or JCN)', layer: layer_CGCDrainageInternalSIorJCN_18},
-            {label: '<img src="legend/CGCDrainageInternal_17.png" /> CGC Drainage (Internal)', layer: layer_CGCDrainageInternal_17},
-            {label: '<img src="legend/CGCSubsoil_16.png" /> CGC Subsoil', layer: layer_CGCSubsoil_16},]},
+            {label: '<img src="legend/CGCStormwaterExternal_20.png" /> CGC Stormwater (External)', layer: layer_CGCStormwaterExternal_20},
+            {label: '<img src="legend/CGCDrainageInternalSIorJCN_19.png" /> CGC Drainage (Internal SI or JCN)', layer: layer_CGCDrainageInternalSIorJCN_19},
+            {label: '<img src="legend/CGCDrainageInternal_18.png" /> CGC Drainage (Internal)', layer: layer_CGCDrainageInternal_18},
+            {label: '<img src="legend/CGCSubsoil_17.png" /> CGC Subsoil', layer: layer_CGCSubsoil_17},]},
         {label: '<b>Irrigation</b>',  selectAllCheckbox: true, children: [
-            {label: '<img src="legend/CGCIrrigationHead_15.png" /> CGC Irrigation (Head)', layer: layer_CGCIrrigationHead_15},
-            {label: '<img src="legend/CGCIrrigationValve_14.png" /> CGC Irrigation (Valve)', layer: layer_CGCIrrigationValve_14},
-            {label: '<img src="legend/CGCIrrigationSpike_13.png" /> CGC Irrigation (Spike)', layer: layer_CGCIrrigationSpike_13},
-            {label: '<img src="legend/CGCIrrigationDistribution_12.png" /> CGC Irrigation (Distribution)', layer: layer_CGCIrrigationDistribution_12},
-            {label: '<img src="legend/CGCIrrigationTrunk_11.png" /> CGC Irrigation (Trunk)', layer: layer_CGCIrrigationTrunk_11},]},
+            {label: '<img src="legend/CGCIrrigationHead_16.png" /> CGC Irrigation (Head)', layer: layer_CGCIrrigationHead_16},
+            {label: '<img src="legend/CGCIrrigationValve_15.png" /> CGC Irrigation (Valve)', layer: layer_CGCIrrigationValve_15},
+            {label: '<img src="legend/CGCIrrigationSpike_14.png" /> CGC Irrigation (Spike)', layer: layer_CGCIrrigationSpike_14},
+            {label: '<img src="legend/CGCIrrigationDistribution_13.png" /> CGC Irrigation (Distribution)', layer: layer_CGCIrrigationDistribution_13},
+            {label: '<img src="legend/CGCIrrigationTrunk_12.png" /> CGC Irrigation (Trunk)', layer: layer_CGCIrrigationTrunk_12},]},
         {label: '<b>GTFB</b>',  selectAllCheckbox: true, children: [
-            {label: '<img src="legend/CGCTees_10.png" /> CGC Tees', layer: layer_CGCTees_10},
-            {label: '<img src="legend/CGCGreens_9.png" /> CGC Greens', layer: layer_CGCGreens_9},
-            {label: '<img src="legend/CGCFairways_8.png" /> CGC Fairways', layer: layer_CGCFairways_8},
-            {label: '<img src="legend/CGCBunkers2024_7.png" /> CGC Bunkers (2024)', layer: layer_CGCBunkers2024_7},]},
+            {label: '<img src="legend/CGCTees_11.png" /> CGC Tees', layer: layer_CGCTees_11},
+            {label: '<img src="legend/CGCGreens_10.png" /> CGC Greens', layer: layer_CGCGreens_10},
+            {label: '<img src="legend/CGCFairways_9.png" /> CGC Fairways', layer: layer_CGCFairways_9},
+            {label: '<img src="legend/CGCBunkers2024_8.png" /> CGC Bunkers (2024)', layer: layer_CGCBunkers2024_8},]},
         {label: '<b>GB - Former Layout</b>',  selectAllCheckbox: true, children: [
-            {label: '<img src="legend/CGCGreensWatson_6.png" /> CGC Greens (Watson)', layer: layer_CGCGreensWatson_6},
-            {label: '<img src="legend/CGCBunkersWatson_5.png" /> CGC Bunkers (Watson)', layer: layer_CGCBunkersWatson_5},
-            {label: '<img src="legend/CGCGreensSoutar_4.png" /> CGC Greens (Soutar)', layer: layer_CGCGreensSoutar_4},
-            {label: '<img src="legend/CGCBunkersSoutar_3.png" /> CGC Bunkers (Soutar)', layer: layer_CGCBunkersSoutar_3},]},
-            {label: '<img src="legend/CGC1mContourClip_2.png" /> CGC - 1m Contour (Clip)', layer: layer_CGC1mContourClip_2},
+            {label: '<img src="legend/CGCGreensWatson_7.png" /> CGC Greens (Watson)', layer: layer_CGCGreensWatson_7},
+            {label: '<img src="legend/CGCBunkersWatson_6.png" /> CGC Bunkers (Watson)', layer: layer_CGCBunkersWatson_6},
+            {label: '<img src="legend/CGCGreensSoutar_5.png" /> CGC Greens (Soutar)', layer: layer_CGCGreensSoutar_5},
+            {label: '<img src="legend/CGCBunkersSoutar_4.png" /> CGC Bunkers (Soutar)', layer: layer_CGCBunkersSoutar_4},]},
+            {label: '<img src="legend/CGC1mContourClip_3.png" /> CGC - 1m Contour (Clip)', layer: layer_CGC1mContourClip_3},
         {label: '<b>Aerial Images</b>',  selectAllCheckbox: true, children: [
-            {label: "CGC.IN.2026.02.24.001 Full Course PNG Georef MR150 Export", layer: layer_CGCIN20260224001FullCoursePNGGeorefMR150Export_1},
+            {label: "2026-08 CGC Range Update", layer: layer_202608CGCRangeUpdate_2},
+            {label: "CGC.IN.2026.02.24.001 Full Course PNG Georef HR Export", layer: layer_CGCIN20260224001FullCoursePNGGeorefHRExport_1},
             {label: "Google Satellite", layer: layer_GoogleSatellite_0},]},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
@@ -1699,12 +1709,12 @@
         });       
         setBounds();
         var i = 0;
-        layer_CGCIrrigationHead_15.eachLayer(function(layer) {
+        layer_CGCIrrigationHead_16.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['Comment'] !== null?String('<div style="color: #323232; font-size: 10pt; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['Comment']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_CGCIrrigationHead_15'});
+            layer.bindTooltip((layer.feature.properties['Comment'] !== null?String('<div style="color: #323232; font-size: 10pt; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['Comment']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_CGCIrrigationHead_16'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -1712,12 +1722,12 @@
               i++;
         });
         var i = 0;
-        layer_CGCExternalServices_23.eachLayer(function(layer) {
+        layer_CGCExternalServices_24.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['Owner'] !== null?String('<div style="color: #1dfb05; font-size: 8pt; font-family: \'Century Gothic\', sans-serif;">' + layer.feature.properties['Owner']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_CGCExternalServices_23'});
+            layer.bindTooltip((layer.feature.properties['Owner'] !== null?String('<div style="color: #1dfb05; font-size: 8pt; font-family: \'Century Gothic\', sans-serif;">' + layer.feature.properties['Owner']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_CGCExternalServices_24'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -1729,15 +1739,15 @@
                 return this._bounds;
             }
         });
-        resetLabels([layer_CGCIrrigationHead_15,layer_CGCExternalServices_23]);
+        resetLabels([layer_CGCIrrigationHead_16,layer_CGCExternalServices_24]);
         map.on("zoomend", function(){
-            resetLabels([layer_CGCIrrigationHead_15,layer_CGCExternalServices_23]);
+            resetLabels([layer_CGCIrrigationHead_16,layer_CGCExternalServices_24]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_CGCIrrigationHead_15,layer_CGCExternalServices_23]);
+            resetLabels([layer_CGCIrrigationHead_16,layer_CGCExternalServices_24]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_CGCIrrigationHead_15,layer_CGCExternalServices_23]);
+            resetLabels([layer_CGCIrrigationHead_16,layer_CGCExternalServices_24]);
         });
         </script>        
     </body>
