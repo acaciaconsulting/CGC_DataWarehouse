@@ -70,7 +70,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[-33.85276394139279,151.09851718612606],[-33.8492320843109,151.10561828063754]]);
+        }).fitBounds([[-33.85497726314114,151.08902305506746],[-33.84508672547698,151.10493285452722]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/qgis2web/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -97,9 +97,20 @@
                 var src = imgTd.getAttribute('src');
                 if (/\.(jpg|jpeg|png|gif|bmp|webp|avif)$/i.test(src)) {
                     popup._contentNode.classList.add('media');
-                    setTimeout(function() {
-                        popup.update();
-                    }, 10);
+                    var img = popup._contentNode.querySelector('td img');
+                    if (img) {
+                        // If already loaded (cache), update immediately
+                        if (img.complete && img.naturalHeight > 0) {
+                            popup.update();
+                        } else {
+                            img.addEventListener('load', function() {
+                                popup.update();
+                            });
+                            img.addEventListener('error', function() {
+                                popup.update();
+                            });
+                        }
+                    }
                 } else if (/\.(mp3|wav|ogg|aac)$/i.test(src)) {
                     var audio = document.createElement('audio');
                     audio.controls = true;
@@ -1714,7 +1725,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['Comment'] !== null?String('<div style="color: #323232; font-size: 10pt; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['Comment']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_CGCIrrigationHead_16'});
+            layer.bindTooltip((layer.feature.properties['Comment'] !== null?String('<div style="color: #323232; font-size: 10pt; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['Comment']).replace(/\\n/g, '<br>') + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_CGCIrrigationHead_16'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -1727,7 +1738,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['Owner'] !== null?String('<div style="color: #1dfb05; font-size: 8pt; font-family: \'Century Gothic\', sans-serif;">' + layer.feature.properties['Owner']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_CGCExternalServices_24'});
+            layer.bindTooltip((layer.feature.properties['Owner'] !== null?String('<div style="color: #1dfb05; font-size: 8pt; font-family: \'Century Gothic\', sans-serif;">' + layer.feature.properties['Owner']).replace(/\\n/g, '<br>') + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_CGCExternalServices_24'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
